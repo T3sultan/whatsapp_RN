@@ -1,16 +1,18 @@
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, CompositeNavigationProp, } from '@react-navigation/native';
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, StackNavigationProp, } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import { View, TouchableOpacity } from 'react-native';
 import { Feather as Icon } from '@expo/vector-icons';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { createMaterialTopTabNavigator, MaterialTopTabNavigationProp, } from '@react-navigation/material-top-tabs';
 import ChatScreen from '../screens/ChatScreen';
 import StatusScreen from '../screens/StatusScreen';
 import CallScreen from '../screens/callScreen';
 import { PRIMARY, PRIMARY_DARK } from '../constants/colors';
 import { SECONDARY_LIGHT, LIGHT_COLOR } from './../constants/colors';
 import { StatusBar } from 'expo-status-bar';
+import Camera from '../screens/CameraScreen/CameraScreen';
+import CameraScreen from '../screens/CameraScreen/CameraScreen';
 
 
 interface MainProps {
@@ -18,6 +20,28 @@ interface MainProps {
 };
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
+
+export type MatrimonyTabParamList = {
+    chats: undefined;
+    status: undefined;
+    calls: undefined;
+    camera: undefined;
+};
+
+export type WhatsAppStackParamList = {
+    home: undefined;
+};
+
+export type combineTabWithStackProps<
+    T extends keyof MatrimonyTabParamList
+    > = CompositeNavigationProp<
+        MaterialTopTabNavigationProp<MatrimonyTabParamList, T>,
+        StackNavigationProp<WhatsAppStackParamList>
+    >;
+
+
+
+
 
 const MaterialTopTab = () => {
     return (
@@ -34,6 +58,14 @@ const MaterialTopTab = () => {
             }}
 
         >
+            <Tab.Screen name="camera" options={{
+                tabBarLabel: () => (
+                    <View>
+                        <Icon name="camera" size={26} color={LIGHT_COLOR} />
+
+                    </View>
+                )
+            }} component={CameraScreen} />
             <Tab.Screen name="Chats" component={ChatScreen} />
             <Tab.Screen name="Status" component={StatusScreen} />
             <Tab.Screen name="Calls" component={CallScreen} />
@@ -45,8 +77,8 @@ const MaterialTopTab = () => {
 
 const Main = ({ }: MainProps) => {
     return (
-        <View style={{flex:1}}>
-            <StatusBar style ="light" backgroundColor={PRIMARY_DARK}
+        <View style={{ flex: 1 }}>
+            <StatusBar style="light" backgroundColor={PRIMARY_DARK}
             />
 
 
