@@ -1,24 +1,22 @@
 import React from 'react';
-import  { View,Text,StyleSheet } from 'react-native';
+import {View,Text, StyleSheet} from 'react-native';
 
 interface HomeScreenProps{
 
 }
+
 const HomeScreen =({}:HomeScreenProps)=>{
-    return (
-        <View style={styles.HomeScreenRoot }>
-           <Text>HomeScreen</Text>
+    return(
+        <View style={styles.HomeContainer}>
+            <Text>HomeScreen</Text>
+
         </View>
     )
-}
-const styles= StyleSheet.create({
-    HomeScreenRoot:{
-        flex:1,
+
+};
+const styles = StyleSheet.create({
+    HomeContainer:{
 
     }
-
-
 })
-
-
-export default HomeScreen
+export default HomeScreen;

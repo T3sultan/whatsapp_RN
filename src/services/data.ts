@@ -1,4 +1,5 @@
-import {userListProps} from './interface'
+import {userListProps} from './interface';
+import{Feather as Icon} from '@expo/vector-icons';
 export const userList:userListProps[] =[
     {
         id:1,
@@ -74,22 +75,6 @@ export const userList:userListProps[] =[
     },
     {
         id:10,
-        name:'Dipu Ahmed',
-        lastMessage:'Good Night',
-        profilePic:'',
-        lastSeen: '11:23 AM',
-
-    },
-    {
-        id:11,
-        name:'Mir Hossain',
-        lastMessage:'Good Morning',
-        profilePic:'',
-        lastSeen: '8:09 AM',
-
-    },
-    {
-        id:12,
         name:'Tipu Sultan',
         lastMessage:'Hello',
         profilePic:'',
@@ -97,7 +82,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:13,
+        id:11,
         name:'Rakib',
         lastMessage:'Hello ,Tipu',
         profilePic:'',
@@ -105,7 +90,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:14,
+        id:12,
         name:'Akramul shanto',
         lastMessage:'This is Me',
         profilePic:'',
@@ -113,7 +98,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:15,
+        id:13,
         name:'Asik ',
         lastMessage:'Working',
         profilePic:'',
@@ -121,7 +106,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:16,
+        id:14,
         name:'Rakibul Islam',
         lastMessage:'Programmer',
         profilePic:'',
@@ -129,7 +114,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:17,
+        id:15,
         name:'Sunny ',
         lastMessage:'Reading the Book',
         profilePic:'',
@@ -137,7 +122,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:18,
+        id:16,
         name:'Shabia',
         lastMessage:'TikTok',
         profilePic:'',
@@ -145,7 +130,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:19,
+        id:17,
         name:'Jowel Ahmed',
         lastMessage:'Android Dev',
         profilePic:'',
@@ -153,7 +138,7 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:20,
+        id:18,
         name:'Joy Ahmed',
         lastMessage:'Bye',
         profilePic:'',
@@ -161,20 +146,148 @@ export const userList:userListProps[] =[
 
     },
     {
-        id:21,
-        name:'Dipu Ahmed',
-        lastMessage:'Good Night',
+        id:19,
+        name:'Tipu Sultan',
+        lastMessage:'Hello',
         profilePic:'',
-        lastSeen: '11:23 AM',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:20,
+        name:'Rakib',
+        lastMessage:'Hello ,Tipu',
+        profilePic:'',
+        lastSeen: '10:25 AM',
+
+    },
+    {
+        id:21,
+        name:'Akramul shanto',
+        lastMessage:'This is Me',
+        profilePic:'',
+        lastSeen: '10:13 AM',
 
     },
     {
         id:22,
-        name:'Mir Hossain',
-        lastMessage:'Good Morning',
+        name:'Asik ',
+        lastMessage:'Working',
         profilePic:'',
-        lastSeen: '8:09 AM',
+        lastSeen: '10:23 AM',
 
     },
+    {
+        id:23,
+        name:'Rakibul Islam',
+        lastMessage:'Programmer',
+        profilePic:'',
+        lastSeen: '10:03 AM',
 
+    },
+    {
+        id:24,
+        name:'Sunny ',
+        lastMessage:'Reading the Book',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:25,
+        name:'Shabia',
+        lastMessage:'TikTok',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:26,
+        name:'Jowel Ahmed',
+        lastMessage:'Android Dev',
+        profilePic:'',
+        lastSeen: '10:00 AM',
+
+    },
+    {
+        id:27,
+        name:'Joy Ahmed',
+        lastMessage:'Bye',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:28,
+        name:'Tipu Sultan',
+        lastMessage:'Hello',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:29,
+        name:'Rakib',
+        lastMessage:'Hello ,Tipu',
+        profilePic:'',
+        lastSeen: '10:25 AM',
+
+    },
+    {
+        id:30,
+        name:'Akramul shanto',
+        lastMessage:'This is Me',
+        profilePic:'',
+        lastSeen: '10:13 AM',
+
+    },
+    {
+        id:31,
+        name:'Asik ',
+        lastMessage:'Working',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:32,
+        name:'Rakibul Islam',
+        lastMessage:'Programmer',
+        profilePic:'',
+        lastSeen: '10:03 AM',
+
+    },
+    {
+        id:33,
+        name:'Sunny ',
+        lastMessage:'Reading the Book',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:34,
+        name:'Shabia',
+        lastMessage:'TikTok',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+    {
+        id:35,
+        name:'Jowel Ahmed',
+        lastMessage:'Android Dev',
+        profilePic:'',
+        lastSeen: '10:00 AM',
+
+    },
+    {
+        id:36,
+        name:'Joy Ahmed',
+        lastMessage:'Bye',
+        profilePic:'',
+        lastSeen: '10:23 AM',
+
+    },
+   
 ]

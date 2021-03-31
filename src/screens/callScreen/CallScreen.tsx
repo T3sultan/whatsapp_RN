@@ -1,15 +1,20 @@
 import React from 'react';
-import { View,Text } from 'react-native';
+import {Text, View,StyleSheet } from  'react-native';
 
+interface CallScreenProps {
 
-interface CallScreenProps{}
-
-const CallScreen =({}:CallScreenProps)=>{
-    return(
+}
+const CallScreen =({}:CallScreenProps) =>{
+    return (
         <View>
-            <Text>CallScreen</Text>
+            <Text>Call</Text>
         </View>
     )
 
 }
+const styles = StyleSheet.create({
+    
+})
+
+
 export default CallScreen;
