@@ -1,5 +1,4 @@
 import {userListProps} from './interface';
-import{Feather as Icon} from '@expo/vector-icons';
 export const userList:userListProps[] =[
     {
         id:1,
